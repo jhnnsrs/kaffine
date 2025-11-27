@@ -8,22 +8,10 @@
 [![PyPI download day](https://img.shields.io/pypi/dm/kaffine.svg)](https://pypi.python.org/pypi/kaffine/)
 
 
-### Inspiration
+# kaffine
 
-Kaffine is inspired by [pint](https://pint.readthedocs.io/en/stable/) and [affine](https://affine.readthedocs.io/en/latest/). 
-And aims to make the creation of unit-aware affine transformations as easy as possible.
-
-Here is a complete, professional GitHub-style `README.md` for your project. I have named the library **`affine-3d`** for this document.
-
-You can save this directly as `README.md` in your project root.
-
------
-
-# affine-3d 
-
-**A fluent, unit-aware 3D transformation library for Python.**
-
-`affine-3d` simplifies constructing complex 4x4 affine transformation matrices. It replaces dense NumPy matrix math with a readable **Builder Pattern**, offers native integration with **Pint** for physical units (mixing microns, millimeters, and inches), and bridges seamlessly with **Scipy** for advanced usage.
+Kaffine is inspired by [pint](https://pint.readthedocs.io/en/stable/) and [affine](https://affine.readthedocs.io/en/latest/). nd aims to make the creation of unit-aware affine transformations as easy as possible.
+`kaffine` simplifies constructing complex 4x4 affine transformation matrices. It r offers native integration with **Pint** for physical units (mixing microns, millimeters, and inches), and bridges seamlessly with **Scipy** for advanced usage.
 
 Designed for **Computer Vision**, **Microscopy**, and **Robotics** applications where "Sample-to-Camera" or "Stage-to-World" coordinates are critical.
 
@@ -40,7 +28,7 @@ Designed for **Computer Vision**, **Microscopy**, and **Robotics** applications 
 
 
 ```bash
-uv add rm kaffine
+uv add kaffine
 ```
 
 ## ⚡ Quick Start
