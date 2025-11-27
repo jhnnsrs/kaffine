@@ -1,0 +1,57 @@
+[project]
+name = "kaffine"
+version = "2.1.0"
+description = "affine transformations with units support"
+authors = [{ name = "jhnnsrs", email = "jhnnsrs@gmail.com" }]
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+dependencies = [
+    "pydantic>=2",
+    "janus>=1.0.0,<2",
+    "pint>=0.25.2",
+]
+
+[project.optional-dependencies]
+qtpy = ["qtpy>1"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=9.0.1",
+    "scipy>=1.16.3",
+]
+
+[tool.hatch.build.targets.sdist]
+include = ["kaffine"]
+
+[tool.hatch.build.targets.wheel]
+include = ["kaffine"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+qt_api = "pyqt5"
+markers = ["qt: marks tests that require a running qt application", "process: marks tests that require the process extra"]
+
+[[tool.pydoc-markdown.loaders]]
+type = "python"
+search_path = ["kaffine"]
+
+[tool.pydoc-markdown.renderer]
+type = "docusaurus"
+docs_base_path = "website/docs"
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
+upload_to_pypi = true
+branch = "main"
+build_command = "uv build"
