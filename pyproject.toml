@@ -19,6 +19,7 @@ qtpy = ["qtpy>1"]
 dev-dependencies = [
     "pytest>=9.0.1",
     "pytest-cov>=7.0.0",
+    "python-semantic-release>=10.5.2",
     "scipy>=1.16.3",
 ]
 
