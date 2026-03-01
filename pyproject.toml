@@ -1,6 +1,6 @@
 [project]
 name = "kaffine"
-version = "1.0.2"
+version = "1.1.0"
 description = "affine transformations with units support"
 authors = [{ name = "jhnnsrs", email = "jhnnsrs@gmail.com" }]
 requires-python = ">=3.11"
