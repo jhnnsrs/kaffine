@@ -8,12 +8,12 @@ from typing import Any, Literal, NamedTuple, overload, TYPE_CHECKING
 try:
     from typing import Self
 except ImportError:
-    from typing_extensions import Self
+    from typing import Self
 
 try:
     from typing import TypeAlias  # Python 3.10+
 except ImportError:
-    from typing_extensions import TypeAlias
+    from typing import TypeAlias
 
 # --- Dependencies ---
 HAS_SCIPY = False

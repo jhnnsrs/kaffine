@@ -29,6 +29,10 @@ include = ["kaffine"]
 [tool.hatch.build.targets.wheel]
 include = ["kaffine"]
 
+
+[tool.ruff.lint]
+extend-select = ["UP"]
+extend-ignore = ["UP037", "UP038", "UP042"]
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
